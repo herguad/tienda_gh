@@ -63,6 +63,20 @@ switch(dia) {
       break;
 };
 
+function sumar(parametro1, parametro2) {
+    let resultado;
+    resultado = parametro1 + parametro2;
+ }
+
+alert('Ingresar valores para realizar una suma')
+for(let aux=0; aux < 1; aux++) {
+   a = Number(prompt("Ingresar valor"));
+   b = Number(prompt('Ingresar otro valor'));
+   sumar(a,b); //argumento
+}
+
+console.log(`El valor de la suma es ${aux}`);  
+
 function cambiarVariable(parametro) {
     parametro = 20;
     console.log(parametro);
