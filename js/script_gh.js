@@ -142,3 +142,20 @@ function cambiarVariable(parametro) {
  
  console.log(variableGlobal);
  
+ // Operadores Ternarios
+//condicion? true : false
+let varA = 3;
+
+(varA == 1)? console.log('El valor es igual a 10') : console.log("El valor es diferente de 10");
+
+
+document.querySelector("html body h1");
+
+document.getElementById('ident');
+
+//devuelve es un array de objetos
+document.getElementsByClassName('clase')[0];
+
+document.getElementsByName('nameH1')[0];
+
+document.getElementsByTagName('h1')[0];
