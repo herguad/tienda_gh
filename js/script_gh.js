@@ -61,4 +61,30 @@ switch(dia) {
    default:
       console.log('No ingreso un día de la semana');
       break;
-}
+};
+
+function cambiarVariable(parametro) {
+    parametro = 20;
+    console.log(parametro);
+ }
+ 
+ let argumento = 10;
+ 
+ cambiarVariable(argumento);
+ 
+ console.log(argumento);
+ 
+ //----------
+ let variableGlobal = 'Saludo';
+ 
+ function cambiarValor(variableLocal) {
+    variableLocal = 'Hola';
+    variableGlobal = 'Nuevo Saludo';
+ }
+ 
+ console.log(variableGlobal);
+ 
+ cambiarValor(variableGlobal);
+ 
+ console.log(variableGlobal);
+ 
