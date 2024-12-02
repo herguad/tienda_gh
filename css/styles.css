@@ -1,0 +1,402 @@
+/*website_gh styles*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin:3px;
+padding:2px;
+border:2.5px solid;
+border-color: transparent;
+max-width: 100%;
+max-height: 100%
+}
+
+:root{
+    font-size:12px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal
+}
+
+#inicio{
+    border:30rem 30rem;
+    padding: 20rem 20rem  #00d3ac;
+    margin: 40rem 40rem #0095b9;
+    border-color: #00b6b5; 
+    gap:0.75rem;
+    background-color:#124e8a;
+    #nav1{
+        text-decoration: none;
+        text-align: center;
+        grid-area: menu;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        background-color:#124e8a;        
+        a{
+            text-decoration: none;
+            color:#27ef7f;
+        }
+        &
+        a:hover{
+            text-decoration: none;
+            color:#0095b9;
+        }
+        &
+        a:active{
+            text-decoration: none;
+            color:#00d5a2;
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            font-size: 1.85em;
+            li{
+                display: inline;
+                margin:1em ;
+                padding:0 ;
+                color:#124e8a
+                }
+            }
+    }
+}
+
+#inicio_c{
+    background-color:transparent;
+    border:30em 30em;
+    padding: 20em 20em  #00d3ac;
+    margin: 40em 40em #0095b9;
+    border-color: #00b6b5 ;
+    #nav2{
+        text-align: center;
+        grid-area: menu;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        gap:0.75rem;
+        justify-content:space-evenly;
+        a{
+        text-decoration: none;
+        color:#124e8a;
+        font-size: 1.75rem;
+        }
+        &
+        a:hover{
+            text-decoration: none;
+            color:#50fa62;
+        }
+        &
+        a:active{
+            text-decoration: none;
+          color:#00d5a2;
+        }
+    }
+}
+
+
+
+
+#content{
+    grid-template-areas: "header"
+                    "main"
+                    "footer";
+    grid-template-rows:0.50fr 0.40fr 0.15fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    position:center;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Kanit";
+    font-style:normal;
+    border: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    line-height:2rem;
+    background-image: linear-gradient(to top, #124e8a, #0072aa, #0095b9, #00b6b5, #00d5a2, #00e294, #27ef7f, #50fa62, #62fb6e, #72fd79, #80fe83, #8dff8e);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    #main{
+        border: 0rem;
+        margin: 0rem;
+        padding: 0rem;
+        position: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #h1{
+            font-size:1rem;
+            color:#4df678;
+            background-image:radial-gradient(circle, #124e8a, #0072aa, #0095b9, #00b6b5, #00d5a2, #00e294, #27ef7f, #50fa62, #62fb6e, #72fd79, #80fe83, #8dff8e);
+            max-height: 12%;
+            gap: 1rem
+            };
+    }
+}
+
+#cont1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 50rem;
+        justify-content: space-evenly;
+        align-items: center;
+        div[id ^='card']{
+            position: center;
+            justify-items: center;
+            align-items: center;
+            font-family: "Kanit";
+            text-align: center;
+            max-width: 30%;
+            max-height: 30%;
+            border-color:#27ef7f;
+            padding:1rem;
+            position: center;
+            background-color:#124e8a;
+            img{
+                position: center
+            }
+            :hover {
+                transform: translate(0, -10px)
+            };
+            p{
+                font-family:"Kanit";
+                font-size: 1.25rem;
+                color:#80fe83;
+                max-width: 70%;
+                min-width: 50%;
+            }
+        }
+    }
+
+#cont2{
+    display: grid;
+            grid-template-rows: 0.5fr 0.5fr; 
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            transform: translateY(-5px);
+            box-shadow: 0 0 3px #0095b9;
+        div[id ^='res']{
+            font-family: "Kanit";
+            text-align: center;
+            max-width: 75%;
+            max-height: 85%;
+            border-color:#72fd79;
+            padding:1rem;
+            :nth-child(odd){
+                background-color:#124e8a;
+                position:left;
+              };  
+            :nth-child(even) {
+                background-color:#00e294;
+                position: right;
+              };
+            :hover {
+                    transform: translate(0, -10px)
+              };
+            p{
+                font-family:"Kanit";
+                font-size: 1.25rem;
+                font-style: italic;
+                color:#124e8a;
+                font-family:"Kanit";
+                max-width: 80%;
+                min-width: 55%;
+            }
+        }
+    }
+
+#form{
+    display: inline-block;
+    position: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: space-evenly;
+    border-color:#6efc76;
+    max-width: 70%;
+    max-height: 60%;
+    min-width: 50%;
+    min-height: auto;
+    background-color:transparent;
+    font-family: "Kanit";
+    font-size: 1.25em;
+    color: #124e8a;
+    text-align: left;
+    input{
+            display: grid;
+            grid-template-areas: "nombre" "correo" "mensaje";
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 0.7fr; 
+            align-items: center;
+            justify-content: space-evenly;
+            width:75%;
+            padding: 0.5rem 0.25rem;
+            margin: 0.5rem 0;
+            box-sizing: border-box;
+            border: 2x solid;
+            border-color:#0072aa;
+            border-radius: 4px;
+            color:#124e8a;
+            background-color:#62fb6e;
+            font-family: "Kanit";
+            text-align: left
+          }
+    #mensaje{
+        display: block;    
+        position:relative;
+            min-width: 70%;
+            max-width: 95%; 
+            max-height: 40%;
+            color:#124e8a;
+            padding: 2em 3em;
+            box-sizing: border-box;
+            border: 2px solid;
+            border-color:#0072aa;
+            border-radius: 4px;
+            font-family: "Kanit";
+            font-size: 1em;
+            background-color:#62fb6e
+        };
+    #submit{
+        display:inline-block;
+        justify-content: right;
+        align-items:right;
+        background-color:#124e8a;
+        border:#0095b9 2em;
+        size: 3rem 2rem;
+        border-radius: 5px;
+        color:#50fa62;
+        text-align: center;
+        font-family: "Kanit";
+        font-weight: 400;
+        font-size: 1.1em;
+        box-shadow: 0 0 2px #27ef7f;
+        :hover {
+            transform: translate(0, -10px)
+            };
+          };
+    @media screen and (max-width=600px) {
+            #form{
+                max-width: 60%;
+                max-height: 40%;
+        
+            }
+            #label{
+                position: left;
+                text-align: left;
+            }
+        };
+        @media screen and (min-width=600px) and (max-width=768px) {
+            #form{
+                max-width: 60%;
+                max-height: 40%;
+        
+            }
+            #label{
+                position: left;
+                text-align: left;
+            }
+        };
+    
+        @media screen and (min-width=768px) and (max-width=992px) {
+            #form{
+                max-width: 60%;
+                max-height: 40%;
+        
+            }
+            #label{
+                position: right;
+                text-align: left;
+            }
+        };
+        
+        @media screen and (min-width=992px) and (max-width=1200px) {
+            #form{
+                max-width: 60%;
+                max-height: 40%
+        
+            };
+            #label{
+                position: right;
+                text-align: left
+            }
+        };
+        
+        @media screen and (min-width=1200) {
+            #form{
+                max-width: 60%;
+                max-height: 40%
+            };
+            #label{
+                position: right;
+                text-align: left
+            }
+        }
+    }   
+
+section[id ^='cont']{
+    background-image: radial-gradient(circle, #00b6b5, #00c5b4, #00d3ac, #00e09e, #00ec89, #33f181, #4df678, #62fb6e, #6efc76, #79fd7e, #83fe86, #8dff8e);
+}
+
+
+@media screen and (max-width=600px) {
+    #video{
+        width:100%;
+        height:100%;
+    }
+}
+@media screen and (min-width=600px) and (max-width=768px) {
+    #video{
+        width:100% ;
+        height: 100% ;
+    }
+}
+@media screen and (min-width=768px) and (max-width=992px) {
+    #video{
+        width:90%;
+        height:90%;
+    }
+}
+@media screen and (min-width=992px) and (max-width=1200px) {
+    #video{
+        width:80%;
+        height:80%;
+    }
+}
+@media screen and (min-width=1200) {
+    #video{
+        width: 70%;
+        height:70% ;
+    }
+}
+
+#footer{
+    font-family: "Kanit";
+    line-height:2rem;
+    background-color:transparent;
+    text-decoration: none;
+    display:block;
+    font-size:2rem;
+    a{
+        text-decoration: none;
+        color:#62fb6e;
+        align-items: center
+    }
+    &
+    a:hover{
+        text-decoration: none;
+        color:#00c5b4;
+        font-size: 1.75
+    }
+    &
+    a:active{
+        text-decoration: none;
+        color:#00b6b5;
+        font-size: 1.5rem
+    }
+}    
