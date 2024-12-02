@@ -63,6 +63,46 @@ switch(dia) {
       break;
 };
 
+//while
+let numero = 5, aux = 0;
+
+/* while ( aux != 0 ) {
+   console.log(numero);
+   aux = aux + 1;
+   aux += 1;
+   aux++;
+};
+*/
+
+let numerico, suma = 0;
+numerico = prompt('Ingrese un número distinto de 0');
+
+while(numerico != 0) {
+   numerico = parseFloat(prompt('Ingrese un número '));
+//console.log(typeof numerico);
+   suma = suma + numerico;
+   console.log("Aquí va el texto", numerico,suma);
+   console.log('Aquí va el texto'+ numerico + suma);
+   console.log(`Nuevo valor ingresado es ${numerico}`)
+}
+console.log(`Resultado de todos los números ingresados ${suma}`);
+
+let arreglo = [];
+
+arreglo[0] = 5;
+arreglo[3] = 8;
+arreglo[4] = 'palabra';
+
+console.log(`Elemento 1 [0]: ${arreglo[0]}`); 
+console.log(`Elemento 2 [1]: ${arreglo[1]}`); 
+console.log(`Elemento 3 [2]: ${arreglo[2]}`); 
+
+for(let aux=0; aux < arreglo.length; aux++) {
+   console.log(`Elemento [${aux}]: ${arreglo[aux]}`);   
+};
+
+//Funciones
+
 function sumar(parametro1, parametro2) {
     let resultado;
     resultado = parametro1 + parametro2;
