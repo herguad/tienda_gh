@@ -153,7 +153,7 @@ document.querySelector("html body h1");
 
 document.getElementById('ident');
 
-//devuelve es un array de objetos
+//devuelve un array de objetos
 document.getElementsByClassName('clase')[0];
 
 document.getElementsByName('nameH1')[0];

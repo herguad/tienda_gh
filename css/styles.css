@@ -11,7 +11,7 @@ max-height: 100%
 }
 
 :root{
-    font-size:12px;
+    font-size:10px;
     font-family: "Kanit";
     font-weight: 400;
     font-style: normal
@@ -112,7 +112,7 @@ max-height: 100%
     margin: 0rem;
     padding: 0rem;
     line-height:2rem;
-    background-image: linear-gradient(to top, #124e8a, #0072aa, #0095b9, #00b6b5, #00d5a2, #00e294, #27ef7f, #50fa62, #62fb6e, #72fd79, #80fe83, #8dff8e);
+    background-image: linear-gradient(to top, #6ae67c, #6de681, #70e685, #74e58a, #77e58e, #80e793, #88ea98, #90ec9d, #9ef1a5, #abf6ad, #b7fab6, #c3ffbf);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -129,7 +129,7 @@ max-height: 100%
         #h1{
             font-size:1rem;
             color:#4df678;
-            background-image:radial-gradient(circle, #124e8a, #0072aa, #0095b9, #00b6b5, #00d5a2, #00e294, #27ef7f, #50fa62, #62fb6e, #72fd79, #80fe83, #8dff8e);
+            background-image:radial-gradient(circle, #6ae67c, #6de681, #70e685, #74e58a, #77e58e, #80e793, #88ea98, #90ec9d, #9ef1a5, #abf6ad, #b7fab6, #c3ffbf);
             max-height: 12%;
             gap: 1rem
             };
@@ -338,11 +338,6 @@ max-height: 100%
             }
         }
     }   
-
-section[id ^='cont']{
-    background-image: radial-gradient(circle, #00b6b5, #00c5b4, #00d3ac, #00e09e, #00ec89, #33f181, #4df678, #62fb6e, #6efc76, #79fd7e, #83fe86, #8dff8e);
-}
-
 
 @media screen and (max-width=600px) {
     #video{
