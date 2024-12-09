@@ -117,8 +117,12 @@ max-height: 100%
     background-position: center;
     background-attachment: fixed;
     #banner{
-        grid-template-rows:1fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 50rem;
+        justify-content: space-evenly;
+        align-items: center;
         text-align: center;
         position:center;
         max-width: 100%;
