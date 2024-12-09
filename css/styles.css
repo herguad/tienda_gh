@@ -94,7 +94,14 @@ max-height: 100%
 }
 
 
-
+#banner{
+    background-color:transparent;
+    border:30em 30em;
+    padding: 20em 20em #abf6ad ;
+    margin: 40em 40em #80e793;
+    border-color: #002D07;
+    color:#002D07
+}
 
 #content{
     grid-template-areas: "header"
