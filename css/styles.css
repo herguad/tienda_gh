@@ -116,7 +116,7 @@ max-height: 100%
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    #banner{
+    #novedades{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
