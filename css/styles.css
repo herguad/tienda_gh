@@ -79,16 +79,20 @@ max-height: 100%
         text-decoration: none;
         color:#124e8a;
         font-size: 1.75rem;
+        border: #002D07 10em 10em;
+        border-radius: 1rem;
         }
         &
         a:hover{
             text-decoration: none;
             color:#50fa62;
+            border: #002D07 10em 10em;
+            border-radius: 4rem;
         }
         &
         a:active{
             text-decoration: none;
-          color:#00d5a2;
+            color:#00d5a2;
         }
     }
 }
@@ -99,7 +103,7 @@ max-height: 100%
                     "novedades"
                     "main"
                     "footer";
-    grid-template-rows:0.15fr 0.45fr 0.30fr 0.1fr;
+    grid-template-rows:0.25fr 0.45fr 0.30fr 0.15fr;
     grid-template-columns: 1fr;
     text-align: center;
     position:center;
