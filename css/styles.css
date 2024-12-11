@@ -99,7 +99,7 @@ max-height: 100%
                     "novedades"
                     "main"
                     "footer";
-    grid-template-rows:0.15fr 0.30fr 0.4fr 0.15fr;
+    grid-template-rows:0.15fr 0.45fr 0.30fr 0.1fr;
     grid-template-columns: 1fr;
     text-align: center;
     position:center;
@@ -127,7 +127,37 @@ max-height: 100%
         padding: 20em 20em #abf6ad ;
         margin: 40em 40em #80e793;
         border-color: #002D07
-    };
+        };
+        @media screen and (max-width=600px) {
+            #myCarousel{
+                width:100%;
+                height:100%;
+            }
+        }
+        @media screen and (min-width=600px) and (max-width=768px) {
+            #myCarousel{
+                width:100% ;
+                height: 100% ;
+            }
+        }
+        @media screen and (min-width=768px) and (max-width=992px) {
+            #myCarousel{
+                width:85%;
+                height:85%;
+            }
+        }
+        @media screen and (min-width=992px) and (max-width=1200px) {
+            #myCarousel{
+                width:75%;
+                height:75%;
+            }
+        }
+        @media screen and (min-width=1200) {
+            #myCarousel{
+                width: 65%;
+                height: 65% ;
+            }
+        };
     #main{
         border: 0rem;
         margin: 0rem;
@@ -364,20 +394,20 @@ max-height: 100%
 }
 @media screen and (min-width=768px) and (max-width=992px) {
     #video{
-        width:90%;
-        height:90%;
+        width:85%;
+        height:85%;
     }
 }
 @media screen and (min-width=992px) and (max-width=1200px) {
     #video{
-        width:80%;
-        height:80%;
+        width:75%;
+        height:75%;
     }
 }
 @media screen and (min-width=1200) {
     #video{
-        width: 70%;
-        height:70% ;
+        width: 65%;
+        height: 65% ;
     }
 }
 
