@@ -77,7 +77,6 @@ max-height: 100%
         justify-content:right;
         a{
         text-decoration: none;
-        color:#124e8a;
         font-size: 1.75rem;
         border: 10em 10em;
         border-radius: 1rem;
@@ -85,14 +84,14 @@ max-height: 100%
         &
         a:hover{
             text-decoration: none;
-            color:#50fa62;
+            color:#80fe83;
             border: #002D07 10em 10em;
             border-radius: 4rem;
         }
         &
         a:active{
             text-decoration: none;
-            color:#00d5a2;
+            color:#90ec9d;
         }
     }
 }
