@@ -38,10 +38,11 @@ function processProductList(productos) {
 
 // Lista de ejemplo y cotejo de función.
 const productList = [
-   { name: "Producto 1", price: 100, descuento: true },
+   { name: "Producto 1", price: 400, descuento: true },
    { name: "Producto 2", price: 200, descuento: false },
    { name: "Producto 3", price: 150, descuento: true },
-   { name: "Producto 4", price: 250, descuento: false },
+   { name: "Producto 4", price: 350, descuento: true },
+   { name: "Producto 5", price: 300, descuento: false }
 ];
 
 processProductList(productList);
