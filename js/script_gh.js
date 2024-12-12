@@ -35,8 +35,8 @@ function processProductList(productos) {
    }
 
    // Mostrar resultados en consola.
-   console.log(`Total productos con disponible: ${totalDispon}`);
-   console.log(`Total productos sin disponible: ${totalNoDisp}`);
+   console.log(`Total productos disponibles: ${totalDispon}`);
+   console.log(`Total productos no disponibles: ${totalNoDisp}`);
    console.log(`Total productos: ${totalDispon + totalNoDisp}`);
 }
 
