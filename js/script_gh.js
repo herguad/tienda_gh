@@ -1,8 +1,12 @@
+
+///Carrito
+
 // Procesar la lista de productos
 function processProductList(productos) {
    // Validar los datos ingresados.
    for (let i = 0; i < productos.length; i++) {
        const product = productos[i];
+
        if (typeof product.name !== 'string') {
            console.error(`${i} no es un nombre. Ingresá un nombre.`, product);
            return;
@@ -20,7 +24,7 @@ function processProductList(productos) {
    let totalConDesc = 0;
    let totalSinDesc = 0;
 
-   // Iterar sobre la lista y sumar la cantidad de productos con descuento.
+// Iterar sobre la lista y sumar la cantidad de productos con descuento.
    for (let i = 0; i < productos.length; i++) {
        const producto = productos[i];
        if (producto.descuento === true) {
