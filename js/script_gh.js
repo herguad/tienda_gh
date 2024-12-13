@@ -56,17 +56,17 @@ processProductList(productList);
 document.addEventListener("DOMContentLoaded", function () {
     // Function to display products
     function displayProducts(filteredProducts = products) {
-        const productContainer = document.getElementById("product-container");
-        productContainer.innerHTML = ""; // Clear previous cards
+        const shopList = document.getElementById("barra_lat");
+        //productContainer.innerHTML = ""; // Clear previous cards
         
         filteredProducts.forEach(product => {
-            const card = document.createElement("div");
-            card.className = "product-card";
-            card.innerHTML = `
+            const buyitem = document.createElement("li"); // agregar elemento al carrio, ie. listarlo y computarlo
+            buyitem.className = "product-item";
+            buyitem.innerHTML = `
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
             `;
-            productContainer.appendChild(card);
+            shopList.appendChild(buyitem);
         });
     }
 
@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     displayProducts();
 
     // Search functionality
-    document.getElementById("search-button").addEventListener("click", function () {
-        const query = document.getElementById("search-bar").value.toLowerCase();
+    document.getElementById("busq").addEventListener("click", function () {
+        const query = document.getElementById("cuadrob").value.toLowerCase();
         const filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
         displayProducts(filteredProducts);
     });
