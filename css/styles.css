@@ -108,7 +108,6 @@ max-height: 100%
     margin: 0rem;
     padding: 0rem;
     line-height:2rem;
-    background-image: linear-gradient(to bottom, #adf6ce, #81edd9, #54e1e8, #2bd3f6, #34c3ff, #5abbff, #7db2ff, #9ca8fd, #b3a8fa, #c6a9f5, #d7abf0, #e5adeb);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -163,7 +162,7 @@ max-height: 100%
         img{
             max-width: 100%;
             max-height: 100%;
-        }
+        };
         #h1{
             font-size:1rem;
             color:#002D07;
@@ -171,28 +170,38 @@ max-height: 100%
             max-height: 12%;
             gap: 1rem
             };
+        .h3{
+                font-size: 3rem;
+                color:#6a7cff
+            };
 /* Style for the aside container */
 /* Style for the search input box */
     #productos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex: 1 1 1 40rem;
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.18fr 0.82fr;
         justify-content: space-evenly;
+        column-gap: 1rem;
     #barra_lat{
-    max-width: 15%;
-    max-height: 100%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 4rem;
+        max-width: 100%;
+        padding: 20px;
+        background-image: linear-gradient(to bottom, #adf6ce, #81edd9, #54e1e8, #2bd3f6, #34c3ff, #5abbff, #7db2ff, #9ca8fd, #b3a8fa, #c6a9f5, #d7abf0, #e5adeb);
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        #listaProd{
+            display:flex;
+            flex-direction: column;
+            overflow-y: auto; /* Enable scrolling for long lists */
+            };
+    };
+
     #cuadrob{
         width: calc(100% - 50px); /* Adjust for the button size */
-        padding: 1rem;
-        font-size: 3rem;
-        border: 0.5rem solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
         border-radius: 4px;
         margin-bottom: 10px;
     };
@@ -213,8 +222,7 @@ max-height: 100%
         background-color: #0056b3;
         }
     };
-    }
-    }
+    };
 }
 
 #cont1{
@@ -254,8 +262,8 @@ max-height: 100%
 
 #cont2{
     display: grid;
-    grid-template-rows: 0.5fr 0.5fr; 
-    grid-template-columns:repeat(auto-fit, minmax(5rem, 0.5fr 0.5fr));
+            grid-template-rows: 0.5fr 0.5fr; 
+            grid-template-columns:repeat(auto-fit, minmax(5rem, 0.5fr 0.5fr));
             justify-content: space-evenly;
             align-content: center;
             align-items: center;
