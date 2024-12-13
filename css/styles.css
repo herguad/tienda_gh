@@ -96,14 +96,14 @@ max-height: 100%
     }
 }
 
+
 #content{
     grid-template-areas: "header"
                     "novedades"
-                    "barra"
                     "main"
                     "footer";
     grid-template-rows:0.25fr 0.45fr 0.30fr 0.15fr;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 1fr;
     text-align: center;
     position:center;
     max-width: 100%;
@@ -119,42 +119,6 @@ max-height: 100%
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    
-/* Style for the aside container */
-/* Style for the search input box */
-#barra_lat{
-    width: 300px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    .input[type="text"] {
-        width: calc(100% - 50px); /* Adjust for the button size */
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin-bottom: 10px;
-    };
-
-/* Style for the search button */
-    .button {
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #fff;
-        background-color: #007bff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-left: 5px;
-        transition: background-color 0.3s ease
-        };
-    .button:hover {
-        background-color: #0056b3;
-        }
-    };
     #novedades{
         display: inline-flex;
         justify-content: space-evenly;
@@ -213,6 +177,48 @@ max-height: 100%
             max-height: 12%;
             gap: 1rem
             };
+/* Style for the aside container */
+/* Style for the search input box */
+    #productos{
+    display: grid;
+    grid-template-columns: 0.15fr 0.85fr;
+    grid-template-rows: 1fr;
+    #barra_lat{
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    #cuadrob{
+        width: calc(100% - 50px); /* Adjust for the button size */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    };
+
+/* Style for the search button */
+    #busq {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 5px;
+        transition:  #007bff 0.3s ease
+        };
+    #busq:hover {
+        background-color: #0056b3;
+        }
+    };
+    }
     }
 }
 
@@ -220,7 +226,7 @@ max-height: 100%
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex: 1 1 50rem;
+        flex: 1 1 1 40rem;
         justify-content: space-evenly;
         align-items: center;
         div[id ^='card']{
