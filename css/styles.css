@@ -17,6 +17,21 @@ max-height: 100%
     font-style: normal
 }
 
+/* Custom Colors */
+.custom-navbar {
+    background-color: #2a3d66; /* Replace with your primary color */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link:hover {
+    color: #ff8c00; /* Replace with your accent color */
+    text-decoration: underline;
+  }
+  
 #inicio{
     border:30rem 30rem;
     padding: 20rem 20rem  #00d3ac;
