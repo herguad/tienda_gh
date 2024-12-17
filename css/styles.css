@@ -122,8 +122,14 @@ max-height: 100%
         border:30em 30em;
         padding: 20em 20em #abf6ad ;
         margin: 40em 40em #80e793;
-        border-color: #002D07
-        };
+        border-color: #34c3ff;
+        background-image:url('assets\imgs\banner_.png');
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center center; 
+        background-attachment: fixed;    
+    };
+
         @media screen and (max-width=600px) {
             #myCarousel{
                 width:100%;
