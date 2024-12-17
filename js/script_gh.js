@@ -1,24 +1,22 @@
 
 ///Carrito
 
-// Procesar la lista de productos
-function processProductList(productos) {
-   // Validar los datos ingresados.
-   for (let i = 0; i < productos.length; i++) {
-       const product = productos[i];
+// Procesar y verificar campos del formulario
+//let campo == console.get("input")
 
-       if (typeof product.name !== 'string') {
-           console.error(`${i} no es un nombre. Ingresá un nombre.`, product);
+function processForm(campos) {
+   // Validar los datos ingresados.
+   for (let i = 0; i < campos.length; i++) {
+       const campo = campos[i];
+
+       if (typeof campo.name !== 'string') {
+           console.error(`${i} no es un nombre. Ingresá un nombre.`, campo);
            return;
        };
-       if (typeof product.price !== 'number' || typeof product.disponible !== 'boolean') {
-         console.error(`${i} no es un número. Ingresá un número.`, product);
+       if (typeof campo.email !== 'email') {
+         console.error(`${i} no es un correo. Ingresá tu email.`, campo);
          return;
      }
-     if (typeof product.disponible !== 'boolean') {
-      console.error(`${i} no es un valor True/False. Ingresá un valor True o False.`, product);
-      return;
-  }
    }
 
    let totalDispon = 0;
@@ -40,16 +38,6 @@ function processProductList(productos) {
    console.log(`Total productos: ${totalDispon + totalNoDisp}`);
 }
 
-// Lista de ejemplo y cotejo de función.
-const productList = [
-   { name: "Producto 1", price: 400, disponible: true },
-   { name: "Producto 2", price: 200, disponible: false },
-   { name: "Producto 3", price: 150, disponible: true },
-   { name: "Producto 4", price: 350, disponible: true },
-   { name: "Producto 5", price: 300, disponible: false }
-];
-
-processProductList(productList);
 
 // JavaScript function to handle product display and search
 
@@ -87,3 +75,34 @@ document.addEventListener("DOMContentLoaded", function () {
         displayProducts(filteredProducts);
     });
 });
+
+
+function processList(productos) {
+    // Validar los datos ingresados.
+    for (let i = 0; i < productos.length; i++) {
+        const product = productos[i];
+ 
+        if (typeof product.name !== 'string') {
+            console.error(`${i} no es un nombre. Ingresá un nombre.`, product);
+            return;
+        };
+        if (typeof product.price !== 'number') {
+          console.error(`${i} no es un número. Ingresá un número.`, product);
+          return;
+      }
+      if (typeof product.disponible !== 'boolean') {
+       console.error(`${i} no es un valor True/False. Ingresá un valor True o False.`, product);
+       return;
+   }
+    }
+}
+// Lista de ejemplo y cotejo de función.
+const productList = [
+   { name: "Producto 1", price: 400, disponible: true },
+   { name: "Producto 2", price: 200, disponible: false },
+   { name: "Producto 3", price: 150, disponible: true },
+   { name: "Producto 4", price: 350, disponible: true },
+   { name: "Producto 5", price: 300, disponible: false }
+];
+
+processList(productList);
