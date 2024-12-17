@@ -112,18 +112,13 @@ max-height: 100%
     margin: 0rem;
     padding: 0rem;
     line-height:1.75rem;
-    background-image: radial-gradient(circle, #eaf2fe, #e7effd, #e4ecfc, #e2e8fb, #e0e5fa, #dbe6fb, #d7e6fb, #d2e7fa, #cdebf8, #cceff2, #d0f1eb, #d8f2e4);
+    background-image: radial-gradient(circle, #eaf2fe, #e7effd, #e4ecfc, #e2e8fb, #e0e5fa, #dbe6fb, #d7e6fb, #d2e7fa, #cdebf8, #cceff2, #d0f1eb, #d8f2e4);*/
     #novedades{
         display: inline-flex;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
         position:center;
-        background-image: url('assets\imgs\banner_.jpg');
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-position: center center; 
-        background-attachment: fixed;
         border:30em 30em;
         padding: 20em 20em #abf6ad ;
         margin: 40em 40em #80e793;
@@ -164,10 +159,6 @@ max-height: 100%
         margin: 0rem;
         padding: 0rem;
         position: center;
-        img{
-            max-width: 100%;
-            max-height: 100%;
-        };
         #h1{
             display: inline block !important;
             font-size:0.85rem;
