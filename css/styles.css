@@ -126,7 +126,7 @@ max-height: 100%
         background-image:url('assets\imgs\banner_.png');
         background-size: contain; 
         background-repeat: no-repeat;
-        background-position: center center; 
+        background-position: center; 
         background-attachment: fixed;    
     };
 
