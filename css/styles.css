@@ -66,11 +66,11 @@ max-height: 100%
 }
 
 #inicio_c{
-    background-color:transparent;
+    background-color:#adf6ce;
     border:30em 30em;
     padding: 20em 20em  #00d3ac;
-    margin: 40em 40em #0095b9;
-    border-color: #002D07;
+    margin: 40em 40em #2bd3f6;
+    border-color:#81edd9;
     #nav2{
         text-align: center;
         grid-area: menu;
@@ -84,18 +84,19 @@ max-height: 100%
         font-size: 1.75rem;
         border: 10em 10em;
         border-radius: 1rem;
+        color:#5e71ff;
         }
         &
         a:hover{
             text-decoration: none;
             color:#80fe83;
-            border: #002D07 10em 10em;
+            border:#6a7cff 10em 10em;
             border-radius: 4rem;
         }
         &
         a:active{
             text-decoration: none;
-            color:#90ec9d;
+            color:#6a7cff;
         }
     }
 }
@@ -112,6 +113,7 @@ max-height: 100%
     margin: 0rem;
     padding: 0rem;
     line-height:1.75rem;
+    background-image: radial-gradient(circle, #eaf2fe, #e7effd, #e4ecfc, #e2e8fb, #e0e5fa, #dbe6fb, #d7e6fb, #d2e7fa, #cdebf8, #cceff2, #d0f1eb, #d8f2e4);
     #novedades{
         display: inline-flex;
         justify-content: space-evenly;
@@ -429,7 +431,7 @@ max-height: 100%
     font-size:2rem;
     a{
         text-decoration: none;
-        color:#62fb6e;
+        color:#5568fa;
         align-items: center
     }
     &
@@ -441,7 +443,7 @@ max-height: 100%
     &
     a:active{
         text-decoration: none;
-        color:#00b6b5;
+        color:#34c3ff;
         font-size: 1.5rem
     }
 }    
