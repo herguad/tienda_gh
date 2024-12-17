@@ -48,7 +48,6 @@ max-height: 100%
                     position:relative;
                     width: auto;
                     right: 20%;
-                    transform: translateX(-30%);
                     text-align: right
                 };
             #navbarNav-link:hover {
