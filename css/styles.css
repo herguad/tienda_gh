@@ -119,7 +119,7 @@ max-height: 100%
         align-items: center;
         text-align: center;
         position:center;
-        background-image: url("assets\imgs\banner_.jpg");
+        background-image: url('assets\imgs\banner_.jpg');
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center center; 
