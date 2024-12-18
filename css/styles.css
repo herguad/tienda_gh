@@ -278,18 +278,19 @@ max-height: 100%
             position: center;
             background-color:#abf6ad;
             img{
-                position: center
-            }
-            :hover {
-                transform: translate(0, -10px)
+                position: center;
+                :hover {
+                    transform: translate(0, 5px);
+                    background-color:#cceff2
+                };
             };
             p{
                 font-family:"Faculty Glyphic";
                 font-size: 1.25rem;
                 color:#5568fa;
                 max-width: 70%;
-                min-width: 50%;
-            };
+                min-width: 50%
+                };
             #descripcion{
                 display:inline-block;
                 justify-content: center;
@@ -304,6 +305,9 @@ max-height: 100%
                 font-weight: 400;
                 font-size: 1.1em;
                 box-shadow: 0 0 2px #7db2ff;
+                :hover {
+                    transform: translate(0, -30px);
+                    background-color:#cceff2
             };
             #comprar{
                 display:inline-block;
@@ -318,10 +322,15 @@ max-height: 100%
                 font-family: "Faculty Glyphic";
                 font-weight: 400;
                 font-size: 1.1em;
-                box-shadow: 0 0 2px #7db2ff
-            }
+                box-shadow: 0 0 2px #7db2ff;
+                :hover{
+                    transform: translate(-30px, 0);
+                    background-color:#cceff2
+                }
+             };
         }
     }
+}
 
 #form{
     display: inline-block;
