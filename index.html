@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="css\styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <title>Tienda</title>
@@ -21,7 +18,7 @@
           <a><img src="assets\imgs\T-logo.png" alt="" width="62" height="78"></a>
           <a class="navbar-brand text-light" href="./index.html">Tienda GH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><img src="assets\imgs\T_button.png"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -74,8 +71,13 @@
           <div id="cont1">
                 <div id="card1">
                     <p><img src="https://picsum.photos/id/82/500/300" alt="Imagen de Picsum" loading="lazy">
-                    <p>descripción 1</p>
-                    <p>Agregar al carrito</p>
+                    <button id="descripcion" onclick="addProductClickEvent()">
+                      <p>descripción 1</p>
+                    </button>
+                    <button id="comprar">
+                      <p>Agregar al carrito</p>
+                    </button>
+                    
                 </div>
                 <div id="card2">
                     <p><img src="https://picsum.photos/id/71/500/300" alt="Imagen de Picsum" loading="lazy">
