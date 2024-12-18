@@ -157,11 +157,7 @@ max-height: 100%
             padding: 2rem 2rem #abf6ad ;
             margin: 3em 3em #80e793;
             border-color: #34c3ff;
-            background-image:url('assets\imgs\banner_.png');
-            background-size: contain; 
-            background-repeat: no-repeat;
-            background-position: center; 
-            background-attachment: fixed;    
+        
         };
         #h1{
             display: block;
