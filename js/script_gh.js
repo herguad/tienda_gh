@@ -61,6 +61,40 @@ function mostrarCarrito() {
 }
 
 
+// Create a small div to display the counter
+const counterDiv = document.createElement('div');
+counterDiv.id = 'cart-counter';
+counterDiv.style.position = 'fixed';
+counterDiv.style.bottom = '10px';
+counterDiv.style.right = '10px';
+counterDiv.style.padding = '10px';
+counterDiv.style.backgroundColor = '#f1f1f1';
+counterDiv.style.border = '1px solid #ccc';
+counterDiv.style.borderRadius = '5px';
+counterDiv.style.fontSize = '16px';
+counterDiv.style.fontWeight = 'bold';
+document.ListaCompra.appendChild(counterDiv);
+
+let clickCount = 0;
+
+// Update the counter display
+function updateCounter() {
+    counterDiv.textContent = `Items in Cart: ${clickCount}`;
+}
+
+// Add event listeners to all "add to cart" buttons
+const buttons = document.querySelectorAll('.add-to-cart');
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        clickCount += 1;
+        updateCounter();
+    });
+});
+
+// Initialize the counter display
+updateCounter();
+
+
 // Example Usage
 agregarAlCarrito("Producto 1", 10.99, 2);
 agregarAlCarrito("Producto 2", 5.99);
@@ -101,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //productContainer.innerHTML = ""; // Clear previous cards
         
         filteredProducts.forEach(product => {
-            const buyitem = document.createElement("li"); // agregar elemento al carrito, ie. listarlo y computarlo
+            const buyitem = document.createElement("p"); // agregar elemento al carrito, ie. listarlo y computarlo
             buyitem.className = "product-item";
             buyitem.innerHTML = `
                 <h3>${product.name}</h3>
