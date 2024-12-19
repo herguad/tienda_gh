@@ -1,10 +1,4 @@
 
-const cartToggle = document.querySelector('.cart-toggle');
-const cartPanel = document.getElementById('cartPanel');
-
-cartToggle.addEventListener('click', () => {
-  cartPanel.classList.toggle('open');
-});
 
 // Carrito de compras array 
 let carritoC = [];
