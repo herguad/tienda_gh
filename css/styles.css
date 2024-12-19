@@ -65,7 +65,7 @@ max-height: 100%
 }
 
 #inicio_c{
-    background-color:#adf6ce;
+    background-color:transparent;
     border:30em 30em;
     padding: 20em 20em  #00d3ac;
     margin: 40em 40em #2bd3f6;
@@ -83,7 +83,7 @@ max-height: 100%
         font-size: 1.75rem;
         border: 10em 10em;
         border-radius: 1rem;
-        color:#5e71ff;
+        color:#5568fa;
         }
         &
         a:hover{
