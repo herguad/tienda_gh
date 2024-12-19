@@ -1,4 +1,10 @@
 
+const cartToggle = document.querySelector('.cart-toggle');
+const cartPanel = document.getElementById('cartPanel');
+
+cartToggle.addEventListener('click', () => {
+  cartPanel.classList.toggle('open');
+});
 
 // Carrito de compras array 
 let carritoC = [];
@@ -110,6 +116,9 @@ productCard2.style.border = "1px solid #ccc";
 productCard2.style.width = "200px";
 document.body.appendChild(productCard2);
 addProductClickEvent(productCard2, "Descripción de Producto 2.");
+
+
+
 // Procesar y verificar campos del formulario
 //let campo == console.get("input")
 
@@ -127,27 +136,8 @@ function processForm(campos) {
          return;
      }
    }
-
-   let totalDispon = 0;
-   let totalNoDisp = 0;
-
-// Iterar sobre la lista y sumar la cantidad de productos con disponible.
-   for (let i = 0; i < productos.length; i++) {
-       const producto = productos[i];
-       if (producto.disponible === true) {
-           totalDispon++;
-       } else {
-           totalNoDisp++;
-       }
-   }
-
-   // Mostrar resultados en consola.
-   console.log(`Total productos disponibles: ${totalDispon}`);
-   console.log(`Total productos no disponibles: ${totalNoDisp}`);
-   console.log(`Total productos: ${totalDispon + totalNoDisp}`);
 }
-
-
+   
 // JavaScript function to handle product display and search
 
 document.addEventListener("DOMContentLoaded", function () {
