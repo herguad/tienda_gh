@@ -73,7 +73,7 @@ counterDiv.style.border = '1px solid #ccc';
 counterDiv.style.borderRadius = '5px';
 counterDiv.style.fontSize = '16px';
 counterDiv.style.fontWeight = 'bold';
-document.ListaCompra.appendChild(counterDiv);
+document.body.appendChild(counterDiv);
 
 let clickCount = 0;
 
