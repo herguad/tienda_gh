@@ -72,7 +72,7 @@ counterDiv.style.backgroundColor = '#b3a8fa';
 counterDiv.style.border = '1px solid #adf6ce';
 counterDiv.style.borderRadius = '5px';
 counterDiv.style.fontFamily = 'Faculty Glyphic';
-counterDiv.style.color = '';
+counterDiv.style.color = 'rgb(64, 68, 102)';
 counterDiv.style.fontSize = '16px';
 counterDiv.style.fontWeight = 'bold';
 document.body.appendChild(counterDiv);
