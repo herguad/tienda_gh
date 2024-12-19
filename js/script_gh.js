@@ -60,25 +60,6 @@ function mostrarCarrito() {
     }
 }
 
-// Agregar botón que muestra la descripción del producto
-function addProductClickEvent(productElement, description) {
-    const descriptionContainer = document.createElement("div");
-    descriptionContainer.style.marginTop = "10px";
-    descriptionContainer.style.display = "none";
-    descriptionContainer.style.padding = "10px";
-    descriptionContainer.style.border = "1px solid #ccc";
-    descriptionContainer.style.backgroundColor = "#f9f9f9";
-    productElement.parentElement.appendChild(descriptionContainer); ///ERROR UNDEFINED
-
-    productElement.addEventListener("click", () => {
-        if (descriptionContainer.style.display === "none") {
-            descriptionContainer.style.display = "block";
-            descriptionContainer.textContent = description;
-        } else {
-            descriptionContainer.style.display = "none";
-        }
-    });
-}
 
 // Example Usage
 agregarAlCarrito("Producto 1", 10.99, 2);
@@ -89,27 +70,6 @@ updateCantidad("Producto 1", 3); // Update cantidad
 mostrarCarrito();
 quitarDelCarrtito("Producto 2"); // Remove a Producto
 mostrarCarrito();
-
-// Example of Producto card click event
-const productCard1 = document.createElement("div");
-productCard1.textContent = "Producto 1";
-productCard1.style.cursor = "pointer";
-productCard1.style.marginBottom = "10px";
-productCard1.style.padding = "10px";
-productCard1.style.border = "1px solid #ccc";
-productCard1.style.width = "200px";
-document.body.appendChild(productCard1);
-addProductClickEvent(productCard1, "Descripción de Producto 1.");
-
-const productCard2 = document.createElement("div");
-productCard2.textContent = "Producto 2";
-productCard2.style.cursor = "pointer";
-productCard2.style.marginBottom = "10px";
-productCard2.style.padding = "10px";
-productCard2.style.border = "1px solid #ccc";
-productCard2.style.width = "200px";
-document.body.appendChild(productCard2);
-addProductClickEvent(productCard2, "Descripción de Producto 2.");
 
 
 
