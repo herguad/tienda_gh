@@ -153,11 +153,11 @@ function processForm(campos) {
 document.addEventListener("DOMContentLoaded", function () {
     // Function to display products
     function displayProducts(filteredProducts = products) {
-        const shopList = document.getElementById("barra_lat");
+        const shopList = document.getElementById("ListaCompra");
         //productContainer.innerHTML = ""; // Clear previous cards
         
         filteredProducts.forEach(product => {
-            const buyitem = document.createElement("li"); // agregar elemento al carrio, ie. listarlo y computarlo
+            const buyitem = document.createElement("li"); // agregar elemento al carrito, ie. listarlo y computarlo
             buyitem.className = "product-item";
             buyitem.innerHTML = `
                 <h3>${product.name}</h3>
