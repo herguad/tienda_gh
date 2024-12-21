@@ -81,7 +81,7 @@ let clickCount = 0;
 
 // Update the counter display
 function updateCounter() {
-    counterDiv.textContent = `Items in Cart: ${clickCount}`;
+    counterDiv.textContent = `Productos en el carrito: ${clickCount}`;
 }
 
 // Add event listeners to all "add to cart" buttons
