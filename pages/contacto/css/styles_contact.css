@@ -188,16 +188,17 @@ max-height: 100%
             align-items:right;
             background-color:#b3a8fa;
             border:#abf6ad 2em;
-            size: 3rem 2rem;
+            size: 4rem 3rem;
             border-radius: 5px;
-            color:#abf6ad;
+            color:#6a7cff;
             text-align: center;
             font-family: "Faculty Glyphic";
             font-weight: 400;
-            font-size: 1.1em;
+            font-size: 1.2em;
             box-shadow: 0 0 2px #7db2ff;
             :hover {
-                transform: translate(0, -10px)
+                transform: translate(0, -10px);
+                color:lightcoral
                 };
               };
         @media screen and (max-width=600px) {
