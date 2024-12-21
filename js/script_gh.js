@@ -15,9 +15,9 @@ function agregarAlCarrito(nombre, precio, cantidad = 1) {
         carritoC.push({ nombre, precio, cantidad });
     }
     var carrito =document.getElementById('carrito');
-    var producItem = document.createElement('p');
+    var producItem = document.getElementsByClassName('producItem');
     producItem.textContent = nombre;
-    carrito.appendChild(producItem);
+    //carrito.appendChild(producItem);
     console.log(`${nombre} agregado al carrito.`);
 }
 
