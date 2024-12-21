@@ -42,7 +42,7 @@ function updateCantidad(nombre, cantidad) {
     }
 }
 
-// Function to calculate the total precio of items in the cart
+// Funcion para calcular el monto total
 function calcularTotal() {
     return carritoC.reduce((total, item) => total + item.precio * item.cantidad, 0);
 }
@@ -61,7 +61,7 @@ function mostrarCarrito() {
 }
 
 
-// Create a small div to display the counter
+// Contenedor para mostrar el contador
 const counterDiv = document.createElement('div');
 counterDiv.id = 'cart-counter';
 counterDiv.style.position = 'fixed';
@@ -79,12 +79,12 @@ document.body.appendChild(counterDiv);
 
 let clickCount = 0;
 
-// Update the counter display
+// Actualizar el contador
 function updateCounter() {
     counterDiv.textContent = `Productos en el carrito: ${clickCount}`;
 }
 
-// Add event listeners to all "add to cart" buttons
+// Agregar event listeners a los otones de compra en las tarjetas de productos
 const buttons = document.querySelectorAll('.add-to-cart');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -93,11 +93,11 @@ buttons.forEach(button => {
     });
 });
 
-// Initialize the counter display
+// Iniciar contador
 updateCounter();
 
 
-// Example Usage
+// Ejemplo
 agregarAlCarrito("Producto 1", 10.99, 2);
 agregarAlCarrito("Producto 2", 5.99);
 agregarAlCarrito("Producto 1", 10.99, 1); // Add more of the same Producto
@@ -109,61 +109,12 @@ mostrarCarrito();
 
 
 
-// Procesar y verificar campos del formulario
-//let campo == console.get("input")
-
-function processForm(campos) {
-   // Validar los datos ingresados.
-   for (let i = 0; i < campos.length; i++) {
-       const campo = campos[i];
-
-       if (typeof campo.name !== 'string') {
-           console.error(`${i} no es un nombre. Ingresá un nombre.`, campo);
-           return;
-       };
-       if (typeof campo.email !== 'email') {
-         console.error(`${i} no es un correo. Ingresá tu email.`, campo);
-         return;
-     }
-   }
-}
-   
-// JavaScript function to handle product display and search
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to display products
-    function displayProducts(filteredProducts = products) {
-        const shopList = document.getElementById("ListaCompra");
-        //productContainer.innerHTML = ""; // Clear previous cards
-        
-        filteredProducts.forEach(product => {
-            const buyitem = document.createElement("p"); // agregar elemento al carrito, ie. listarlo y computarlo
-            buyitem.className = "product-item";
-            buyitem.innerHTML = `
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-            `;
-            shopList.appendChild(buyitem);
-        });
-    }
-
-    // Initial list of products
-    const products = [
-        { name: "Product 1", description: "Description of Product 1" },
-        { name: "Product 2", description: "Description of Product 2" },
-        { name: "Product 3", description: "Description of Product 3" },
-    ];
-
-    // Display all products initially
-    displayProducts();
-
-    // Search functionality
+// Barra de búsqueda
     document.getElementById("busq").addEventListener("click", function () {
         const query = document.getElementById("cuadrob").value.toLowerCase();
         const filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
         displayProducts(filteredProducts);
     });
-});
 
 
 function processList(productos) {
