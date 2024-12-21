@@ -122,3 +122,132 @@ max-height: 100%
         max-height:50%;
         };
     }
+
+    #form{
+        display: inline-block;
+        position: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: space-evenly;
+        border-color:#b3a8fa;
+        max-width: 70%;
+        max-height: 60%;
+        min-width: 50%;
+        min-height: auto;
+        background-color:transparent;
+        font-family: "Faculty Glyphic";
+        font-size: 1.25em;
+        color: #124e8a;
+        text-align: left;
+        input{
+                display: grid;
+                grid-template-areas: "nombre" "correo" "mensaje";
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.3fr 0.7fr; 
+                align-items: center;
+                justify-content: space-evenly;
+                width:75%;
+                padding: 0.5rem 0.25rem;
+                margin: 0.5rem 0;
+                box-sizing: border-box;
+                border: 2x solid;
+                border-color:#0072aa;
+                border-radius: 4px;
+                color:#124e8a;
+                background-color:#62fb6e;
+                font-family: "Faculty Glyphic";
+                text-align: left
+              }
+        #mensaje{
+            display: block;    
+            position:relative;
+                min-width: 70%;
+                max-width: 95%; 
+                max-height: 40%;
+                color:#124e8a;
+                padding: 2em 3em;
+                box-sizing: border-box;
+                border: 2px solid;
+                border-color:#0072aa;
+                border-radius: 4px;
+                font-family: "Faculty Glyphic";
+                font-size: 1em;
+                background-color:#62fb6e
+            };
+        #submit{
+            display:inline-block;
+            justify-content: right;
+            align-items:right;
+            background-color:#b3a8fa;
+            border:#abf6ad 2em;
+            size: 3rem 2rem;
+            border-radius: 5px;
+            color:#abf6ad;
+            text-align: center;
+            font-family: "Faculty Glyphic";
+            font-weight: 400;
+            font-size: 1.1em;
+            box-shadow: 0 0 2px #7db2ff;
+            :hover {
+                transform: translate(0, -10px)
+                };
+              };
+        @media screen and (max-width=600px) {
+                #form{
+                    max-width: 60%;
+                    max-height: 40%;
+            
+                }
+                #label{
+                    position: left;
+                    text-align: left;
+                }
+            };
+            @media screen and (min-width=600px) and (max-width=768px) {
+                #form{
+                    max-width: 60%;
+                    max-height: 40%;
+            
+                }
+                #label{
+                    position: left;
+                    text-align: left;
+                }
+            };
+        
+            @media screen and (min-width=768px) and (max-width=992px) {
+                #form{
+                    max-width: 60%;
+                    max-height: 40%;
+            
+                }
+                #label{
+                    position: right;
+                    text-align: left;
+                }
+            };
+            
+            @media screen and (min-width=992px) and (max-width=1200px) {
+                #form{
+                    max-width: 60%;
+                    max-height: 40%
+            
+                };
+                #label{
+                    position: right;
+                    text-align: left
+                }
+            };
+            
+            @media screen and (min-width=1200) {
+                #form{
+                    max-width: 60%;
+                    max-height: 40%
+                };
+                #label{
+                    position: right;
+                    text-align: left
+                }
+            }
+        }
