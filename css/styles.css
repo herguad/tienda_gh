@@ -492,13 +492,13 @@ max-height: 100%
     &
     a:hover{
         text-decoration: none;
-        color:#00c5b4;
+        color:#c6a9f5;
         font-size: 1.75
     }
     &
     a:active{
         text-decoration: none;
-        color:#34c3ff;
+        color:#d8f2e4;
         font-size: 1.5rem
     }
 }    
