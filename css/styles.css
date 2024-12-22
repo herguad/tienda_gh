@@ -196,6 +196,11 @@ max-height: 100%
             }
         
         };
+        #h1{
+            background-image: radial-gradient(circle, #adf6ce, #81edd9, #54e1e8, #2bd3f6, #34c3ff, #5abbff, #7db2ff, #9ca8fd, #b3a8fa, #c6a9f5, #d7abf0, #e5adeb);
+            color:#e2e8fb;
+            font-size: 3rem;
+        }
         .h3{
                 font-size: 0.3rem;
                 color:#6a7cff
@@ -214,7 +219,6 @@ max-height: 100%
         background-image: linear-gradient(to bottom, #adf6ce, #81edd9, #54e1e8, #2bd3f6, #34c3ff, #5abbff, #7db2ff, #9ca8fd, #b3a8fa, #c6a9f5, #d7abf0, #e5adeb);
         border: 1px solid #ccc;
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 20px;
         #listaProd{
             display:flex;
@@ -282,14 +286,11 @@ max-height: 100%
             color:#5568fa;
             font-size: 1.2rem;
             :hover {
-                transform: translate(0, 5px);
+                transform: translate(3px, 3px);
                 background-color:#b3a8fa
             };
             img{
                 position: center;
-                :hover {
-                    transform: translate(0, 5px);
-                };
             };
             #comprar{
                 display:inline-block;
