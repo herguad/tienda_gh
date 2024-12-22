@@ -220,8 +220,16 @@ max-height: 100%
             display:flex;
             flex-direction: column;
             overflow-y: auto; /* Enable scrolling for long lists */
-            };
-    };
+            font-size: 1.5rem;
+            color: #5568fa;
+            font-weight: 600;
+            line-height: 3rem;
+            .li:hover{
+                    color:#ffa4a4;
+                    background-color:#adf6ce 
+                }
+            }
+        };
 
     #cuadrob{
         width: calc(100% - 50px); /* Adjust for the button size */
