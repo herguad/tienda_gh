@@ -169,7 +169,7 @@ max-height: 100%
         #mensaje{
             display: block;    
             position:relative;
-                min-width: 70%;
+                min-width: 85%;
                 max-width: 95%; 
                 max-height: 40%;
                 color:#124e8a;
@@ -180,7 +180,7 @@ max-height: 100%
                 border-radius: 4px;
                 font-family: "Faculty Glyphic";
                 font-size: 1em;
-                background-color:#62fb6e
+                background-color:#abf6ad
             };
         #submit{
             display:inline-block;
