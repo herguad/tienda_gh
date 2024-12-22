@@ -481,6 +481,7 @@ max-height: 100%
     text-decoration: none;
     display:block;
     font-size:2rem;
+    font-weight: 500;
     width: 1vp;
     line-height: 3.6rem;
     background-color:#c6a9f5;
@@ -492,13 +493,13 @@ max-height: 100%
     &
     a:hover{
         text-decoration: none;
-        color:#c6a9f5;
+        color:#d8f2e4;
         font-size: 1.75
     }
     &
     a:active{
         text-decoration: none;
-        color:#d8f2e4;
+        color:#ffa4a4;
         font-size: 1.5rem
     }
 }    
